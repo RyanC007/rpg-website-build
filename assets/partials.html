@@ -1,0 +1,96 @@
+<!--
+  RPG SHARED PARTIALS — REFERENCE FILE
+  Copy the nav and footer into each page.
+  Update the <base> depth prefix for asset paths as needed.
+  Root pages: assets/ prefix
+  1-level deep (/solutions/): ../assets/ prefix
+  2-levels deep (/education/how-to/): ../../assets/ prefix
+-->
+
+<!-- ============================================================
+     GLOBAL NAV — copy into each page
+     ============================================================ -->
+<nav class="rpg-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="nav-logo" aria-label="Ready, Plan, Grow! Home">
+      <span>ready,<span class="orange"> plan,</span><span class="green"> grow!</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" role="list">
+      <li><a href="/solutions">How We Help</a></li>
+      <li><a href="/community">Community</a></li>
+      <li><a href="/event-list">Events &amp; Office Hours</a></li>
+      <li><a href="/frameworks">Our Frameworks</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="/login" class="nav-login">Login</a>
+      <a href="/join" class="btn btn-secondary btn-sm">Join Free</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     GLOBAL FOOTER — copy into each page
+     ============================================================ -->
+<footer class="rpg-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" aria-label="Ready, Plan, Grow! Home">
+        <span style="font-size:1.25rem;font-weight:800;color:#fff;letter-spacing:-0.02em;">
+          ready, <span style="color:#FF681E;">plan,</span> <span style="color:#5F9C3F;">grow!</span>
+        </span>
+      </a>
+      <p>We help small businesses get found on Google and AI tools by running consistent, AI-powered marketing systems that build trust and drive customers.</p>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@readyplangrow" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/readyplangrow" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.2 2.3 4.2 5.4v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.8C24 .8 23.2 0 22.2 0z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/readyplangrow" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12c0-3.2 0-3.6.1-4.8C2.4 3.9 4 2.3 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12c0 3.3 0 3.7.1 4.9.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24c3.3 0 3.7 0 4.9-.1 4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9 0-3.3 0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>What We Do</h4>
+      <ul>
+        <li><a href="/solutions">Solutions Overview</a></li>
+        <li><a href="/smb-content-services">Content Services</a></li>
+        <li><a href="/ai-brand-audit">AI Brand Audit</a></li>
+        <li><a href="/know-your-numbers">Know Your Numbers</a></li>
+        <li><a href="/partner-programs">Partner Programs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="/community">Community</a></li>
+        <li><a href="/education">Education Hub</a></li>
+        <li><a href="/frameworks">Our Frameworks</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/event-list">Events &amp; Office Hours</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/about/marcela-shine">Meet Marcela</a></li>
+        <li><a href="/about/ryan-cunningham">Meet Ryan</a></li>
+        <li><a href="/customer-stories">Customer Stories</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/join">Join Free</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2024&ndash;2026 Shine Enterprises LLC DBA Ready, Plan, Grow! All rights reserved.</span>
+    <a href="/terms">Terms &amp; Conditions</a>
+  </div>
+</footer>
