@@ -3,125 +3,272 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan Cunningham | Co-Founder, Ready, Plan, Grow!</title>
-  <meta name="description" content="Meet Ryan Cunningham, co-founder of Ready, Plan, Grow! AI strategy, e-commerce, and marketing technology expert building systems that help small businesses grow.">
+  <title>Meet Ryan Cunningham | Ready, Plan, Grow!</title>
+  <meta name="description" content="Meet Ryan Cunningham — the AI brains of the Ready, Plan, Grow! team. 35+ years in ecommerce, retail, and international business, now supercharged by AI.">
   <link rel="canonical" href="https://readyplangrow.com/about/ryan-cunningham">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/rpg.css">
+  <style>
+    .bio-hero { background:#0d1b2a; padding:80px 24px; }
+    .bio-hero .inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+    @media(max-width:768px){ .bio-hero .inner { grid-template-columns:1fr; } }
+    .page-label { display:inline-block; background:#FF6B35; color:#fff; font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:6px 16px; border-radius:20px; margin-bottom:24px; }
+    .bio-hero h1 { font-size:clamp(36px,5vw,56px); font-weight:700; line-height:1.1; color:#fff; margin-bottom:20px; }
+    .bio-hero h1 span { color:#FF6B35; }
+    .bio-hero .tagline { font-size:16px; font-style:italic; color:#F5C518; font-weight:600; margin-bottom:20px; }
+    .bio-hero p { font-size:17px; line-height:1.7; color:rgba(255,255,255,0.85); margin-bottom:14px; }
+    .bio-hero .cta-group { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+    .photo-placeholder { border-radius:12px; overflow:hidden; background:#1a2a3a; min-height:400px; display:flex; align-items:center; justify-content:center; position:relative; }
+    .photo-placeholder .caption { position:absolute; bottom:0; left:0; right:0; background:rgba(0,0,0,0.6); color:rgba(255,255,255,0.8); font-size:13px; padding:10px 16px; text-align:center; }
+    .photo-placeholder .icon { font-size:80px; color:rgba(255,255,255,0.2); }
+    .stats-row { background:#f8f8f6; padding:48px 24px; }
+    .stats-grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+    @media(max-width:768px){ .stats-grid { grid-template-columns:repeat(2,1fr); } }
+    .stat-card { background:#fff; border-radius:12px; padding:28px 20px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+    .stat-icon { width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:22px; }
+    .stat-icon.orange { background:#FF6B35; color:#fff; }
+    .stat-icon.yellow { background:#F5C518; color:#1a1a1a; }
+    .stat-icon.green { background:#5a9a3a; color:#fff; }
+    .stat-icon.dark { background:#1a1a1a; color:#fff; }
+    .stat-card h4 { font-size:14px; font-weight:700; color:#1a1a1a; margin-bottom:4px; }
+    .stat-card p { font-size:13px; color:#666; line-height:1.4; }
+    .bio-section { padding:72px 24px; }
+    .bio-section.white { background:#fff; }
+    .bio-section.gray { background:#f8f8f6; }
+    .bio-section.dark { background:#0d1b2a; }
+    .bio-section .inner { max-width:1100px; margin:0 auto; }
+    .bio-section .two-col { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+    @media(max-width:768px){ .bio-section .two-col { grid-template-columns:1fr; } }
+    .section-label { font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FF6B35; margin-bottom:12px; display:block; }
+    .bio-section.dark .section-label { color:#F5C518; }
+    .bio-section h2 { font-size:clamp(26px,4vw,36px); font-weight:700; color:#1a1a1a; margin-bottom:20px; line-height:1.3; }
+    .bio-section.dark h2 { color:#fff; }
+    .bio-section p { font-size:16px; line-height:1.8; color:#444; margin-bottom:16px; }
+    .bio-section.dark p { color:rgba(255,255,255,0.85); }
+    .photo-block { border-radius:12px; overflow:hidden; background:#1a2a3a; min-height:320px; display:flex; align-items:center; justify-content:center; position:relative; }
+    .photo-block .caption { position:absolute; bottom:0; left:0; right:0; background:rgba(0,0,0,0.6); color:rgba(255,255,255,0.8); font-size:13px; padding:10px 16px; text-align:center; }
+    .photo-block .icon { font-size:60px; color:rgba(255,255,255,0.2); }
+    .three-col { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:32px; }
+    @media(max-width:768px){ .three-col { grid-template-columns:1fr; } }
+    .highlight-card { background:#fff; border-radius:12px; padding:28px; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+    .highlight-card h4 { font-size:15px; font-weight:700; color:#1a1a1a; margin-bottom:8px; }
+    .highlight-card p { font-size:14px; color:#666; line-height:1.6; margin:0; }
+    .refs-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:32px; }
+    @media(max-width:768px){ .refs-grid { grid-template-columns:1fr; } }
+    .ref-card { background:#fff; border-radius:12px; padding:24px; box-shadow:0 2px 8px rgba(0,0,0,0.06); text-align:center; }
+    .ref-card a { font-size:15px; font-weight:600; color:#FF6B35; text-decoration:none; }
+    .ref-card a:hover { text-decoration:underline; }
+    .ref-card p { font-size:13px; color:#888; margin:6px 0 0; }
+    .cta-band-dark { background:#0d1b2a; padding:80px 24px; text-align:center; }
+    .cta-band-dark h2 { font-size:36px; font-weight:700; color:#fff; margin-bottom:16px; }
+    .cta-band-dark p { font-size:18px; color:rgba(255,255,255,0.85); max-width:640px; margin:0 auto 36px; line-height:1.6; }
+    .cta-band-dark .cta-group { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  </style>
 </head>
 <body>
 
-<nav class="rpg-nav" role="navigation" aria-label="Main navigation">
-  <div class="container">
-    <a href="/rpg-website-build/" class="nav-logo"><span>ready,<span class="orange"> plan,</span><span class="green"> grow!</span></span></a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <ul class="nav-links" role="list">
-      <li><a href="/rpg-website-build/solutions">How We Help</a></li>
-      <li><a href="/rpg-website-build/community">Community</a></li>
-      <li><a href="/rpg-website-build/event-list">Events &amp; Office Hours</a></li>
-      <li><a href="/rpg-website-build/frameworks">Our Frameworks</a></li>
-      <li><a href="/rpg-website-build/blog">Blog</a></li>
-      <li><a href="/rpg-website-build/about" class="active">About</a></li>
-    </ul>
-    <div class="nav-cta">
-      <a href="/rpg-website-build/login" class="nav-login">Login</a>
-      <a href="/rpg-website-build/join" class="btn btn-secondary btn-sm">Join Free</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/rpg-website-build/" class="nav-logo">
+        <span style="font-weight:700;font-size:18px;color:#1a1a1a;">ready, <span style="color:#FF6B35;">plan,</span> <span style="color:#F5C518;">grow!</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="/rpg-website-build/solutions">How We Help</a></li>
+        <li><a href="/rpg-website-build/community">Community</a></li>
+        <li><a href="/rpg-website-build/event-list">Events &amp; Office Hours</a></li>
+        <li><a href="/rpg-website-build/frameworks">Our Frameworks</a></li>
+        <li><a href="/rpg-website-build/blog">Blog</a></li>
+        <li><a href="/rpg-website-build/about" class="active">About</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="/rpg-website-build/login" class="nav-login">Login</a>
+        <a href="/rpg-website-build/join" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<section style="background:var(--color-bg-dark);padding:80px 24px;">
-  <div class="container" style="max-width:960px;">
-    <div class="grid-2" style="align-items:center;gap:60px;">
+  <!-- HERO -->
+  <section class="bio-hero">
+    <div class="inner">
       <div>
-        <a href="/rpg-website-build/about" style="font-size:0.875rem;color:rgba(255,255,255,0.6);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:24px;">← Back to About</a>
-        <span class="eyebrow">Co-Founder</span>
-        <h1 style="color:#fff;">Ryan Cunningham</h1>
-        <p style="color:var(--color-green);font-weight:600;font-size:1.0625rem;margin-bottom:16px;">AI Strategy and E-Commerce Expert</p>
-        <p style="color:rgba(255,255,255,0.8);font-size:1.0625rem;line-height:1.7;">Ryan has spent his career building at the intersection of AI, e-commerce, and marketing technology. He co-founded Ready, Plan, Grow! to put enterprise-grade AI systems within reach of small businesses who can't afford a team of engineers.</p>
+        <div class="page-label">Speaker Bio</div>
+        <h1>Meet<br><span>Ryan Cunningham</span></h1>
+        <p class="tagline">"Rye the AI Guy"</p>
+        <p>In today's fast-paced business world, you need a guide with real-world experience and a forward-thinking approach. Meet Ryan Cunningham. He's the AI brains of the Ready, Plan, Grow! team.</p>
+        <p>With over 35 years navigating ecommerce, retail, and international business (both in the USA and Europe with brands like Ducati and BMW), Ryan brings a wealth of practical knowledge, now supercharged by his deep dive into Artificial Intelligence.</p>
+        <div class="cta-group">
+          <a href="/rpg-website-build/solutions" class="btn btn-primary">Explore Solutions</a>
+          <a href="/rpg-website-build/about" class="btn btn-outline-white">Meet the Team</a>
+        </div>
       </div>
-      <div style="display:flex;justify-content:center;">
-        <div style="width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,var(--color-green),var(--color-navy));display:flex;align-items:center;justify-content:center;font-size:4rem;font-weight:800;color:#fff;">R</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container" style="max-width:800px;">
-    <h2>His story.</h2>
-    <p>Ryan started in e-commerce and quickly became obsessed with the systems that separate businesses that scale from businesses that stall. He spent years building and optimizing marketing technology stacks for e-commerce brands, learning what works and what's just expensive noise.</p>
-    <p style="margin-top:16px;">When AI tools started becoming genuinely useful for marketing, Ryan was already deep in the space. He saw that the businesses getting the most out of AI weren't the ones with the best prompts. They were the ones with the best foundations: clear brand guidelines, documented customer profiles, and a consistent content strategy.</p>
-    <p style="margin-top:16px;">That insight became the Business Backpack framework and the foundation of everything Ready, Plan, Grow! does.</p>
-
-    <div style="background:var(--color-bg-light);border-left:4px solid var(--color-green);padding:24px 28px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:40px 0;">
-      <blockquote style="font-size:1.125rem;font-style:italic;color:var(--color-navy);margin:0;line-height:1.7;">"AI doesn't make bad strategy good. It makes good strategy faster. We build the strategy first. Then we let AI do the heavy lifting."</blockquote>
-      <cite style="font-size:0.875rem;font-weight:600;color:var(--color-green);margin-top:12px;display:block;">Ryan Cunningham, Co-Founder</cite>
-    </div>
-
-    <h2 style="margin-top:40px;">What Ryan does at RPG.</h2>
-    <div class="feature-list" style="margin-top:20px;">
-      <div class="feature-item"><div class="feature-check">✓</div><p>Builds and maintains the AI systems and automation that power client content delivery</p></div>
-      <div class="feature-item"><div class="feature-check">✓</div><p>Leads AI strategy and tool selection for all client engagements</p></div>
-      <div class="feature-item"><div class="feature-check">✓</div><p>Develops the technical infrastructure for the RPG platform and member tools</p></div>
-      <div class="feature-item"><div class="feature-check">✓</div><p>Runs AI tool workshops and how-to guides for the community</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-light">
-  <div class="container" style="max-width:800px;">
-    <h2>Tools Ryan uses and teaches.</h2>
-    <div class="grid-3">
-      <div class="card" style="text-align:center;padding:24px;">
-        <div style="font-size:2rem;margin-bottom:8px;">🤖</div>
-        <h4>ChatGPT</h4>
-        <a href="/rpg-website-build/education/how-to/chatgpt" style="font-size:0.875rem;color:var(--color-orange);">See the guide</a>
-      </div>
-      <div class="card" style="text-align:center;padding:24px;">
-        <div style="font-size:2rem;margin-bottom:8px;">🧠</div>
-        <h4>Claude</h4>
-        <a href="/rpg-website-build/education/how-to/claude" style="font-size:0.875rem;color:var(--color-orange);">See the guide</a>
-      </div>
-      <div class="card" style="text-align:center;padding:24px;">
-        <div style="font-size:2rem;margin-bottom:8px;">⚡</div>
-        <h4>Manus</h4>
-        <a href="/rpg-website-build/education/how-to/manus" style="font-size:0.875rem;color:var(--color-orange);">See the guide</a>
+      <div class="photo-placeholder">
+        <span class="icon">📸</span>
+        <div class="caption">Ryan Cunningham — "Rye the AI Guy"</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta-band">
-  <div class="container">
-    <h2>Want to learn how to use AI in your business?</h2>
-    <p>Join the community and get access to Ryan's AI tool guides and workshops.</p>
-    <div class="btn-actions">
-      <a href="/rpg-website-build/join" class="btn btn-primary btn-lg">Join the Community</a>
-      <a href="/rpg-website-build/about/marcela-shine" class="btn btn-outline-white btn-lg">Meet Marcela</a>
-    </div>
-  </div>
-</section>
-
-<footer class="rpg-footer" role="contentinfo">
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="/rpg-website-build/"><span style="font-size:1.25rem;font-weight:800;color:#fff;">ready, <span style="color:#FF681E;">plan,</span> <span style="color:#5F9C3F;">grow!</span></span></a>
-      <p>We help small businesses get found on Google and AI tools by running consistent, AI-powered marketing systems.</p>
-      <div class="footer-social">
-        <a href="https://www.youtube.com/@readyplangrow" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
-        <a href="https://www.linkedin.com/company/readyplangrow" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
-        <a href="https://www.instagram.com/readyplangrow" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+  <!-- STATS -->
+  <section class="stats-row">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon orange">🧠</div>
+        <h4>AI Expert</h4>
+        <p>3+ years deep in AI research &amp; prompt engineering</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon yellow">📈</div>
+        <h4>Entrepreneur</h4>
+        <p>Founded multiple 6-7 figure businesses</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon green">🌍</div>
+        <h4>Global</h4>
+        <p>35+ years USA &amp; Europe experience</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon dark">💪</div>
+        <h4>Resilient</h4>
+        <p>Cancer survivor turned AI advocate</p>
       </div>
     </div>
-    <div class="footer-col"><h4>What We Do</h4><ul><li><a href="/rpg-website-build/solutions">Solutions Overview</a></li><li><a href="/rpg-website-build/smb-content-services">Content Services</a></li><li><a href="/rpg-website-build/ai-brand-audit">AI Brand Audit</a></li><li><a href="/rpg-website-build/know-your-numbers">Know Your Numbers</a></li><li><a href="/rpg-website-build/partner-programs">Partner Programs</a></li></ul></div>
-    <div class="footer-col"><h4>Learn</h4><ul><li><a href="/rpg-website-build/community">Community</a></li><li><a href="/rpg-website-build/education">Education Hub</a></li><li><a href="/rpg-website-build/frameworks">Our Frameworks</a></li><li><a href="/rpg-website-build/blog">Blog</a></li><li><a href="/rpg-website-build/event-list">Events &amp; Office Hours</a></li></ul></div>
-    <div class="footer-col"><h4>Company</h4><ul><li><a href="/rpg-website-build/about">About Us</a></li><li><a href="/rpg-website-build/customer-stories">Customer Stories</a></li><li><a href="/rpg-website-build/contact">Contact</a></li><li><a href="/rpg-website-build/join">Join Free</a></li></ul></div>
-  </div>
-  <div class="footer-bottom">
-    <span>&copy; 2024-2026 Shine Enterprises LLC DBA Ready, Plan, Grow! All rights reserved.</span>
-    <a href="/rpg-website-build/terms">Terms &amp; Conditions</a>
-  </div>
-</footer>
-<script src="../../assets/js/rpg.js"></script>
+  </section>
+
+  <!-- ENTREPRENEURIAL JOURNEY -->
+  <section class="bio-section white">
+    <div class="inner">
+      <div style="text-align:center;margin-bottom:48px;">
+        <span class="section-label">Entrepreneurial Journey</span>
+        <h2>Resilience and Innovation</h2>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3 style="font-size:20px;font-weight:700;color:#1a1a1a;margin-bottom:8px;">Casoli Moto USA</h3>
+          <p style="font-size:14px;color:#888;margin-bottom:16px;">1999–2000</p>
+          <p>Ryan launched Casoli Moto USA in 1999/2000, achieving nearly $1 million in its first year. This success was built on a keen understanding of market dynamics and international business with premium brands like Ducati and BMW.</p>
+        </div>
+        <div>
+          <h3 style="font-size:20px;font-weight:700;color:#1a1a1a;margin-bottom:8px;">Logoclothz.com</h3>
+          <p style="font-size:14px;color:#888;margin-bottom:16px;">Co-founded with Paul Bucklin</p>
+          <p>Co-founded Logoclothz.com, an ecommerce success known for its customer focus and impressive growth driven by Ryan's SEO expertise.</p>
+          <p>Logoclothz reflects Ryan's commitment to giving back through initiatives like planting trees and supporting veterans via Project New Hope. It's a skill he has honed through ventures that balance profit with purpose.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI TRANSFORMATION -->
+  <section class="bio-section gray">
+    <div class="inner">
+      <div class="two-col">
+        <div class="photo-block">
+          <span class="icon">📸</span>
+          <div class="caption">Ryan at 1der.ai — demystifying AI for small businesses</div>
+        </div>
+        <div>
+          <span class="section-label">AI Transformation</span>
+          <h2>From Cancer Survivor to AI Pioneer</h2>
+          <p>After surviving lung cancer, Ryan dove into AI and prompt engineering, founding 1der.ai to help small businesses cut through the hype and use AI tools that actually work.</p>
+          <p>Recognizing the transformative power of AI, Ryan, also known as "Rye The AI Guy" through his 1der.ai initiative, has spent the last three years immersed in AI research and prompt engineering.</p>
+          <p>His mission at 1der.ai is to demystify AI for small businesses, offering genuine advice and practical tools. This philosophy is born from over 25 years in internet marketing, coding, and SEO, and deepened by life experiences that taught him what truly matters.</p>
+          <a href="https://1der.ai" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:8px;">Visit 1der.ai</a>
+          <div class="three-col" style="margin-top:32px;">
+            <div class="highlight-card">
+              <h4>AI Research</h4>
+              <p>3+ years immersed in AI and prompt engineering</p>
+            </div>
+            <div class="highlight-card">
+              <h4>Technical Expertise</h4>
+              <p>25+ years internet marketing, coding, and SEO</p>
+            </div>
+            <div class="highlight-card">
+              <h4>No-Hype Approach</h4>
+              <p>Practical AI tools without the marketing fluff</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="bio-section white">
+    <div class="inner">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Philosophy</span>
+          <h2>Empowering Your Success</h2>
+          <p>Ryan's approach is about empowering you. He's learned from successes and setbacks, understanding that true wealth encompasses more than just money. It's about impact and helping others.</p>
+          <p>His focus at Ready, Plan, Grow! is to pass on these hard-won lessons, simplifying your path to success. Whether it's mastering SEO, leveraging AI for efficiency, or building a customer-centric business, Ryan provides actionable strategies.</p>
+          <p>He's passionate about sharing his AI journey and helping others leverage this technology without the hype.</p>
+        </div>
+        <div class="photo-block">
+          <span class="icon">📸</span>
+          <div class="caption">Ryan — empowering small businesses with AI</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="bio-section gray">
+    <div class="inner">
+      <div style="text-align:center;margin-bottom:32px;">
+        <span class="section-label">References &amp; Featured Work</span>
+        <h2>References &amp; Featured Work</h2>
+      </div>
+      <div class="refs-grid">
+        <div class="ref-card">
+          <a href="https://tawk.to" target="_blank" rel="noopener">Featured in tawk.to</a>
+          <p>Featured customer story</p>
+        </div>
+        <div class="ref-card">
+          <a href="https://starterstory.com" target="_blank" rel="noopener">Starter Story</a>
+          <p>$15K/Month Business &amp; SEO Success</p>
+        </div>
+        <div class="ref-card">
+          <a href="https://logoclothz.com" target="_blank" rel="noopener">Logoclothz.com</a>
+          <p>Co-founded ecommerce brand</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band-dark">
+    <h2>Ready to Tap Into Decades of Experience?</h2>
+    <p>Join us at Ready, Plan, Grow! and let Ryan help you navigate your business journey with confidence. Get cutting-edge AI insights combined with real-world entrepreneurial wisdom.</p>
+    <div class="cta-group">
+      <a href="/rpg-website-build/solutions" class="btn btn-primary btn-lg">Explore Solutions</a>
+      <a href="/rpg-website-build/about" class="btn btn-outline-white btn-lg">Meet the Team</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="rpg-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/rpg-website-build/"><span style="font-size:1.25rem;font-weight:800;color:#fff;">ready, <span style="color:#FF681E;">plan,</span> <span style="color:#5F9C3F;">grow!</span></span></a>
+        <p>We help small businesses get more customers by making it easy for customers to understand and trust their business when they look them up.</p>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@readyplangrow" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+          <a href="https://www.linkedin.com/company/readyplangrow" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
+          <a href="https://www.instagram.com/readyplangrow" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>What We Do</h4><ul><li><a href="/rpg-website-build/smb-content-services">Small Business Solutions</a></li><li><a href="/rpg-website-build/solutions">Growth Stage Business Solutions</a></li><li><a href="/rpg-website-build/education/knowledge-base">Knowledge Base</a></li><li><a href="/rpg-website-build/event-list">Events &amp; Office Hours</a></li><li><a href="/rpg-website-build/education">Education</a></li></ul></div>
+      <div class="footer-col"><h4>About Us</h4><ul><li><a href="/rpg-website-build/about">Team</a></li><li><a href="/rpg-website-build/blog">Blog</a></li><li><a href="/rpg-website-build/contact">Contact Us</a></li></ul></div>
+      <div class="footer-col"><h4>Connect With Us</h4><ul><li><a href="https://linkedin.com/company/readyplangrow" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://youtube.com/@readyplangrow" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://instagram.com/readyplangrow" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ready, Plan, Grow! All rights reserved.</span>
+      <a href="/rpg-website-build/terms">Terms &amp; Conditions</a>
+    </div>
+  </footer>
+
+  <script src="/rpg-website-build/assets/js/rpg.js"></script>
 </body>
 </html>
