@@ -126,6 +126,31 @@ p.lead { font-size: 1.125rem; color: var(--color-text); }
   display: block;
 }
 
+/* ── DARK SECTION TEXT OVERRIDES ── */
+/* Any section/div with a dark navy background gets white text automatically */
+.hero, .rpg-hero, .partner-hero, .rpg-cta, .partner-cta, .core-module,
+[style*="background: #0d1b2a"], [style*="background:#0d1b2a"],
+[style*="background: #0E172B"], [style*="background:#0E172B"],
+section[style*="background"] {
+  color: #fff;
+}
+.hero h1, .hero h2, .hero h3, .hero h4,
+.rpg-hero h1, .rpg-hero h2, .rpg-hero h3,
+.partner-hero h1, .partner-hero h2, .partner-hero h3,
+.rpg-cta h1, .rpg-cta h2, .rpg-cta h3,
+.partner-cta h1, .partner-cta h2, .partner-cta h3,
+.core-module h1, .core-module h2, .core-module h3, .core-module h4,
+.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4,
+.dark-section h1, .dark-section h2, .dark-section h3, .dark-section h4 {
+  color: #ffffff !important;
+}
+.hero p, .rpg-hero p, .partner-hero p,
+.rpg-cta p, .partner-cta p,
+.core-module p,
+.bg-dark p, .dark-section p {
+  color: rgba(255,255,255,0.85) !important;
+}
+
 /* ── BUTTONS ── */
 .btn {
   display: inline-flex;
