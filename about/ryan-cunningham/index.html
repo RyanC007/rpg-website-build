@@ -10,72 +10,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/rpg.css">
-  <style>
-    .bio-hero { background:#0d1b2a; padding:80px 24px; }
-    .bio-hero .inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
-    @media(max-width:768px){ .bio-hero .inner { grid-template-columns:1fr; } }
-    .page-label { display:inline-block; background:#FF6B35; color:#fff; font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:6px 16px; border-radius:20px; margin-bottom:24px; }
-    .bio-hero h1 { font-size:clamp(36px,5vw,56px); font-weight:700; line-height:1.1; color:#fff; margin-bottom:20px; }
-    .bio-hero h1 span { color:#FF6B35; }
-    .bio-hero .tagline { font-size:16px; font-style:italic; color:#F5C518; font-weight:600; margin-bottom:20px; }
-    .bio-hero p { font-size:17px; line-height:1.7; color:rgba(255,255,255,0.85); margin-bottom:14px; }
-    .bio-hero .cta-group { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
-    .photo-placeholder { border-radius:12px; overflow:hidden; background:#1a2a3a; min-height:400px; display:flex; align-items:center; justify-content:center; position:relative; }
-    .photo-placeholder .caption { position:absolute; bottom:0; left:0; right:0; background:rgba(0,0,0,0.6); color:rgba(255,255,255,0.8); font-size:13px; padding:10px 16px; text-align:center; }
-    .photo-placeholder .icon { font-size:80px; color:rgba(255,255,255,0.2); }
-    .stats-row { background:#f8f8f6; padding:48px 24px; }
-    .stats-grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
-    @media(max-width:768px){ .stats-grid { grid-template-columns:repeat(2,1fr); } }
-    .stat-card { background:#fff; border-radius:12px; padding:28px 20px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
-    .stat-icon { width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:22px; }
-    .stat-icon.orange { background:#FF6B35; color:#fff; }
-    .stat-icon.yellow { background:#F5C518; color:#1a1a1a; }
-    .stat-icon.green { background:#5a9a3a; color:#fff; }
-    .stat-icon.dark { background:#1a1a1a; color:#fff; }
-    .stat-card h4 { font-size:14px; font-weight:700; color:#1a1a1a; margin-bottom:4px; }
-    .stat-card p { font-size:13px; color:#666; line-height:1.4; }
-    .bio-section { padding:72px 24px; }
-    .bio-section.white { background:#fff; }
-    .bio-section.gray { background:#f8f8f6; }
-    .bio-section.dark { background:#0d1b2a; }
-    .bio-section .inner { max-width:1100px; margin:0 auto; }
-    .bio-section .two-col { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
-    @media(max-width:768px){ .bio-section .two-col { grid-template-columns:1fr; } }
-    .section-label { font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FF6B35; margin-bottom:12px; display:block; }
-    .bio-section.dark .section-label { color:#F5C518; }
-    .bio-section h2 { font-size:clamp(26px,4vw,36px); font-weight:700; color:#1a1a1a; margin-bottom:20px; line-height:1.3; }
-    .bio-section.dark h2 { color:#fff; }
-    .bio-section p { font-size:16px; line-height:1.8; color:#444; margin-bottom:16px; }
-    .bio-section.dark p { color:rgba(255,255,255,0.85); }
-    .photo-block { border-radius:12px; overflow:hidden; background:#1a2a3a; min-height:320px; display:flex; align-items:center; justify-content:center; position:relative; }
-    .photo-block .caption { position:absolute; bottom:0; left:0; right:0; background:rgba(0,0,0,0.6); color:rgba(255,255,255,0.8); font-size:13px; padding:10px 16px; text-align:center; }
-    .photo-block .icon { font-size:60px; color:rgba(255,255,255,0.2); }
-    .three-col { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:32px; }
-    @media(max-width:768px){ .three-col { grid-template-columns:1fr; } }
-    .highlight-card { background:#fff; border-radius:12px; padding:28px; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
-    .highlight-card h4 { font-size:15px; font-weight:700; color:#1a1a1a; margin-bottom:8px; }
-    .highlight-card p { font-size:14px; color:#666; line-height:1.6; margin:0; }
-    .refs-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:32px; }
-    @media(max-width:768px){ .refs-grid { grid-template-columns:1fr; } }
-    .ref-card { background:#fff; border-radius:12px; padding:24px; box-shadow:0 2px 8px rgba(0,0,0,0.06); text-align:center; }
-    .ref-card a { font-size:15px; font-weight:600; color:#FF6B35; text-decoration:none; }
-    .ref-card a:hover { text-decoration:underline; }
-    .ref-card p { font-size:13px; color:#888; margin:6px 0 0; }
-    .cta-band-dark { background:#0d1b2a; padding:80px 24px; text-align:center; }
-    .cta-band-dark h2 { font-size:36px; font-weight:700; color:#fff; margin-bottom:16px; }
-    .cta-band-dark p { font-size:18px; color:rgba(255,255,255,0.85); max-width:640px; margin:0 auto 36px; line-height:1.6; }
-    .cta-band-dark .cta-group { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
-  </style>
-</head>
+  </head>
 <body>
 
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="/rpg-website-build/" class="nav-logo">
-        <span style="font-weight:700;font-size:18px;color:#1a1a1a;">ready, <span style="color:#FF6B35;">plan,</span> <span style="color:#F5C518;">grow!</span></span>
+    <nav class="rpg-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="/rpg-website-build/" class="nav-logo" aria-label="Ready, Plan, Grow! Home">
+        <span>ready,<span class="orange"> plan,</span><span class="green"> grow!</span></span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-      <ul class="nav-links">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
         <li><a href="/rpg-website-build/solutions">How We Help</a></li>
         <li><a href="/rpg-website-build/community">Community</a></li>
         <li><a href="/rpg-website-build/event-list">Events &amp; Office Hours</a></li>
@@ -85,7 +31,7 @@
       </ul>
       <div class="nav-cta">
         <a href="/rpg-website-build/login" class="nav-login">Login</a>
-        <a href="/rpg-website-build/join" class="btn btn-primary btn-sm">Get Started</a>
+        <a href="/rpg-website-build/join" class="btn btn-secondary btn-sm">Join Free</a>
       </div>
     </div>
   </nav>
